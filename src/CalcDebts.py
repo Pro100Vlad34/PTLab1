@@ -9,8 +9,8 @@ class CalcDebts:
         count = 0
         for student, subjects in self.data.items():
             failures = sum(1 for _, score in subjects if score < 61)
-            
+
             if failures == 2:
                 count += 1
-                
+
         return count

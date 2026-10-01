@@ -9,10 +9,10 @@ class TestCalcDebts:
     def test_calc_debts_from_xml(self) -> None:
         reader = XMLDataReader()
         data = reader.read("./data/data.xml")
-        
+
         calc_debts = CalcDebts(data)
         result = calc_debts.calc()
-        
+
         # Сидоров (2 долга), Новикова (2 долга), Соколова (2 долга).
         # Итого должно быть 3 студента.
         assert result == 3

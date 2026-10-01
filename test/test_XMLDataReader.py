@@ -2,19 +2,20 @@ import pytest
 from src.Types import DataType
 from src.XMLDataReader import XMLDataReader
 
+
 class TestXMLDataReader:
 
-    def test_read_valid_xml(self) -> None:     
+    def test_read_valid_xml(self) -> None:
         reader = XMLDataReader()
-        
+
         path = "./data/data.xml"
-        
+
         result = reader.read(path)
-        
+
         assert isinstance(result, dict)
-        
+
         assert "Иванов Иван Иванович" in result
-        
+
         ivanov_subjects = result["Иванов Иван Иванович"]
         assert ("математика", 67) in ivanov_subjects
         assert ("литература", 100) in ivanov_subjects
@@ -23,8 +24,8 @@ class TestXMLDataReader:
         xml_content = "<?xml version='1.0'?><root></root>"
         file_path = tmp_path / "empty.xml"
         file_path.write_text(xml_content, encoding='utf-8')
-        
+
         reader = XMLDataReader()
         result = reader.read(str(file_path))
-        
+
         assert result == {}
