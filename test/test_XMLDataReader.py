@@ -7,16 +7,16 @@ class TestXMLDataReader:
 
     def test_read_valid_xml(self) -> None:
         reader = XMLDataReader()
-        
+
         path = "./data/data.xml"
-        
+
         result = reader.read(path)
-        
+
         assert isinstance(result, dict)
-        
+
         # Проверяем, что Иванов есть в списке
         assert "Иванов Иван Иванович" in result
-        
+
         ivanov_subjects = result["Иванов Иван Иванович"]
         # Обновляем ожидаемые баллы согласно вашему data.xml
         assert ("математика", 80) in ivanov_subjects
