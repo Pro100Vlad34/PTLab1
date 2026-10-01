@@ -1,13 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <root>
     <student name="Иванов Иван Иванович">
-        <subject name="математика">67</subject>
-        <subject name="литература">100</subject>
-        <subject name="программирование">91</subject>
+        <subject name="математика">80</subject>
+        <subject name="программирование">90</subject>
+        <subject name="литература">76</subject>
     </student>
     <student name="Петров Петр Петрович">
-        <subject name="математика">78</subject>
-        <subject name="химия">87</subject>
-        <subject name="социология">61</subject>
+        <subject name="математика">100</subject>
+        <subject name="социология">90</subject>
+        <subject name="химия">61</subject>
+    </student>
+
+
+    <student name="Сидоров Сидор Сидорович">
+        <subject name="физика">40</subject>
+        <subject name="химия">50</subject>
+        <subject name="биология">85</subject>
+    </student>
+
+
+    <student name="Кузнецов Алексей Николаевич">
+        <subject name="история">75</subject>
+        <subject name="география">82</subject>
+        <subject name="английский">90</subject>
+    </student>
+
+
+    <student name="Морозова Анна Сергеевна">
+        <subject name="экономика">55</subject>
+        <subject name="право">70</subject>
+        <subject name="философия">88</subject>
+    </student>
+
+
+    <student name="Волков Дмитрий Игоревич">
+        <subject name="алгебра">30</subject>
+        <subject name="геометрия">45</subject>
+        <subject name="информатика">20</subject>
+    </student>
+
+
+    <student name="Новикова Елена Владимировна">
+        <subject name="логика">59</subject>
+        <subject name="психология">40</subject>
+        <subject name="социология">95</subject>
+    </student>
+
+
+    <student name="Лебедев Максим Андреевич">
+        <subject name="физкультура">90</subject>
+        <subject name="ОБЖ">85</subject>
+        <subject name="технология">80</subject>
+    </student>
+
+
+    <student name="Соколова Мария Дмитриевна">
+        <subject name="черчение">50</subject>
+        <subject name="труд">55</subject>
+        <subject name="рисование">70</subject>
+    </student>
+
+
+    <student name="Попов Артем Викторович">
+        <subject name="астрономия">60</subject>
+        <subject name="физика">75</subject>
+        <subject name="химия">80</subject>
     </student>
 </root>
