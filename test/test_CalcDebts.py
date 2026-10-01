@@ -13,10 +13,14 @@ class TestCalcDebts:
         calc_debts = CalcDebts(data)
         result = calc_debts.calc()
         
-        # Сидоров (2 долга), Новикова (2 долга), Соколова (2 долга).
-        # Итого должно быть 3 студента.
-        assert result == 3
+
+        assert isinstance(result, list)
+        assert len(result) == 3
+        
+        assert "Сидоров Сидор Сидорович" in result
+        assert "Новикова Елена Владимировна" in result
+        assert "Соколова Мария Дмитриевна" in result
 
     def test_empty_data(self) -> None:
         calc_debts = CalcDebts({})
-        assert calc_debts.calc() == 0
+        assert calc_debts.calc() == []
