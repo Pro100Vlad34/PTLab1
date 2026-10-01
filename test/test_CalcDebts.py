@@ -9,11 +9,10 @@ class TestCalcDebts:
     def test_calc_debts_from_xml(self) -> None:
         reader = XMLDataReader()
         data = reader.read("./data/data.xml")
-        
+
         calc_debts = CalcDebts(data)
         result = calc_debts.calc()
         
-
         assert isinstance(result, list)
         assert len(result) == 3
         
