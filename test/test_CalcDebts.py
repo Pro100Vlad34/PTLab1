@@ -12,10 +12,10 @@ class TestCalcDebts:
 
         calc_debts = CalcDebts(data)
         result = calc_debts.calc()
-        
+
         assert isinstance(result, list)
         assert len(result) == 3
-        
+
         assert "Сидоров Сидор Сидорович" in result
         assert "Новикова Елена Владимировна" in result
         assert "Соколова Мария Дмитриевна" in result
